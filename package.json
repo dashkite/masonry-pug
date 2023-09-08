@@ -15,13 +15,11 @@
   "author": "Daniel Yoder",
   "exports": {
     ".": {
-      "browser": "./build/browser/src/index.js",
       "node": "./build/node/src/index.js"
     }
   },
   "main": "build/node/src/index.js",
   "files": [
-    "build/browser/src",
     "build/node/src"
   ],
   "scripts": {
@@ -32,6 +30,15 @@
     "@dashkite/amen": "^0.2.0",
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/assert": "^0.1.4",
-    "@dashkite/genie": "link:../genie"
+    "@dashkite/genie": "link:../genie",
+    "@dashkite/genie-coffee": "link:../genie-coffee"
+  },
+  "dependencies": {
+    "@dashkite/masonry-coffee": "link:../masonry-coffee",
+    "@dashkite/masonry-export": "link:../masonry-export",
+    "@dashkite/masonry-markdown": "link:../masonry-markdown",
+    "@dashkite/masonry-stylus": "link:../masonry-stylus",
+    "@dashkite/masonry-yaml": "link:../masonry-yaml",
+    "pug": "^3.0.2"
   }
 }
