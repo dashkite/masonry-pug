@@ -39,6 +39,7 @@
     "@dashkite/masonry-markdown": "link:../masonry-markdown",
     "@dashkite/masonry-stylus": "link:../masonry-stylus",
     "@dashkite/masonry-yaml": "link:../masonry-yaml",
-    "marked": "^9.0.0"
+    "marked": "^9.0.0",
+    "pug": "^3.0.2"
   }
 }
