@@ -21,8 +21,8 @@ js = ({ root, source, input, build }) ->
     when "node"
       "#{ f }\nmodule.exports = template;"
 
-html = ({ root, source, input, data }) ->
-  Pug.render input,
+html = ({ root, source, input, data, build }) ->
+  Pug.render input, {
     filename: source?.path
     basedir: root
     # TODO make it possible to write to the data attribute
@@ -32,6 +32,8 @@ html = ({ root, source, input, data }) ->
       markdown: ( input ) -> markdown { root, source, input }
       stylus: ( input ) -> stylus { root, source, input, build }
       yaml: ( input ) -> yaml { root, source, input, build }
+    build.context...
+  }
 
 Presets = { html, js }
 
