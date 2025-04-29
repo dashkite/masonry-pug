@@ -15,7 +15,6 @@ js = ({ root, source, input, build }) ->
       markdown: ( input ) -> markdown { root, source, input }
       stylus: ( input ) -> stylus { root, source, input, build }
       yaml: ( input ) -> yaml { root, source, input, build }
-  # TODO figure out how to generalize in masonry-export
   switch build.target
     when "browser"
       "#{ f }\nexport default template"
@@ -26,7 +25,6 @@ html = ({ root, source, input, data, build }) ->
   Pug.render input, {
     filename: source?.path
     basedir: root
-    # TODO make it possible to write to the data attribute
     data: data
     filters:
       coffee: ( input ) -> coffee { root, source, input, build }
