@@ -1,9 +1,11 @@
+import Path from "node:path"
 import * as Fn from "@dashkite/joy/function"
 import Pug from "pug"
 # import modularize from "@dashkite/masonry-export"
 import { coffee } from "@dashkite/masonry-coffee"
 import { stylus } from "@dashkite/masonry-stylus"
 import { markdown } from "@dashkite/masonry-markdown"
+# import { textile } from "@dashkite/masonry-textile"
 import { yaml } from "@dashkite/masonry-yaml"
 
 js = ({ root, source, input, build }) ->
@@ -13,6 +15,7 @@ js = ({ root, source, input, build }) ->
     filters:
       coffee: ( input ) -> coffee { root, source, input, build }
       markdown: ( input ) -> markdown { root, source, input }
+      # textile: ( input ) -> textile { root, source, input }
       stylus: ( input ) -> stylus { root, source, input, build }
       yaml: ( input ) -> yaml { root, source, input, build }
   switch build.target
@@ -29,6 +32,7 @@ html = ({ root, source, input, data, build }) ->
     filters:
       coffee: ( input ) -> coffee { root, source, input, build }
       markdown: ( input ) -> markdown { root, source, input }
+      # textile: ( input ) -> textile { root, source, input }
       stylus: ( input ) -> stylus { root, source, input, build }
       yaml: ( input ) -> yaml { root, source, input, build }
     build.context...
