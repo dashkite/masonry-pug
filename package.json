@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@dashkite/joy": "link:../joy",
-    "@dashkite/masonry-coffee": "link:../masonry-coffee",
+    "@dashkite/masonry-coffee": "0.3.0",
     "@dashkite/masonry-export": "link:../masonry-export",
     "@dashkite/masonry-markdown": "link:../masonry-markdown",
     "@dashkite/masonry-stylus": "link:../masonry-stylus",
