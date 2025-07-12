@@ -39,10 +39,10 @@
   "dependencies": {
     "@dashkite/joy": "link:../joy",
     "@dashkite/masonry-coffee": "0.3.0",
-    "@dashkite/masonry-export": "link:../masonry-export",
-    "@dashkite/masonry-markdown": "link:../masonry-markdown",
+    "@dashkite/masonry-export": "0.1.0",
+    "@dashkite/masonry-markdown": "0.1.0",
     "@dashkite/masonry-stylus": "link:../masonry-stylus",
-    "@dashkite/masonry-yaml": "link:../masonry-yaml",
+    "@dashkite/masonry-yaml": "0.1.0",
     "marked": "^9.0.0",
     "pug": "^3.0.2"
   }
