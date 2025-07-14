@@ -37,7 +37,7 @@
     "@dashkite/genie-release": "^0.2.8"
   },
   "dependencies": {
-    "@dashkite/joy": "link:../joy",
+    "@dashkite/joy": "0.5.0",
     "@dashkite/masonry-coffee": "0.3.0",
     "@dashkite/masonry-export": "0.1.0",
     "@dashkite/masonry-markdown": "0.1.0",
