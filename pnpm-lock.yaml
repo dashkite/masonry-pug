@@ -21,8 +21,8 @@ importers:
         specifier: 0.7.0
         version: 0.7.0
       '@dashkite/masonry-stylus':
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: 0.8.0
+        version: 0.8.0
       '@dashkite/masonry-yaml':
         specifier: 0.8.0
         version: 0.8.0
@@ -665,17 +665,23 @@ packages:
   '@dashkite/masonry-coffee@0.2.0':
     resolution: {integrity: sha512-xJO48SIRpsYbJF32CwpA6yeEJhNh+DtxCucyt4MNJqO0yru9X7hoxZsHneRoUE+kISD0KTO8DLQiHv21nU/V2A==}
 
+  '@dashkite/masonry-export@0.1.0':
+    resolution: {integrity: sha512-K5ILSl4b+8SatTJTO4AJO+QuBR+coXk9gkeAZRtIx7qhuhdJbB1dCq+pqscYGJ81He1lzHP4DiQtEAf8wBHykA==}
+
   '@dashkite/masonry-export@0.7.0':
     resolution: {integrity: sha512-1Ll6nOYRKU2ylp9GH4UOG06g4otHxUW6q9xeIKxzwyrYXnHgWBRfS8Q18mDwWeT0Bcp1Qu9V/cDN1OsN9F0+/Q==}
 
   '@dashkite/masonry-markdown@0.7.0':
     resolution: {integrity: sha512-syY8pwAkh/4VsENnZ7eRn6g0oENgLaEcKTp9egja1YjlnlMd0ZtdbPHXBFsQ7dk9aqyNPzxC2UtAjo3nEYYmZQ==}
 
-  '@dashkite/masonry-stylus@0.7.0':
-    resolution: {integrity: sha512-Y2RktC8S/eLSKY0twMbxSGslIrWyvWy8HRO7gNzJgCy2CIEGlU9/zXZ9AUrMqr85RyboIcxY2fpV1cc2WhriOA==}
+  '@dashkite/masonry-stylus@0.8.0':
+    resolution: {integrity: sha512-lZ8AAHhSezJe3wf0kVoVlFAuWSIiOuMdPf+HJ1fxCXJL8REJ88rcN6zLxLU9OkwBgiyfaCcdiha6+XhtdRhPig==}
 
   '@dashkite/masonry-targets@0.1.0':
     resolution: {integrity: sha512-nb1N+oBZLw04AFUV49ZFLBAb/NQ0fJseO6ACrEfgXkHra2I1oxwHxLIKtMqWcedQa3QP2pqA/eeBmtGiTQGM0Q==}
+
+  '@dashkite/masonry-text@0.7.0':
+    resolution: {integrity: sha512-5nxGc+caqu5L8oT8YtbmmMqh8PMFlJVLthhohR4QmNI2HwZ+XHjtyi33P9TKyxAkLBHPFcoVfui0M42p2kaseA==}
 
   '@dashkite/masonry-yaml@0.8.0':
     resolution: {integrity: sha512-kvLSQa339SG7yueaas34ckNsSq6rbteKKK9tusT0JlmvqTkoPPOkAsMmpVvtIXKdEdoF680lEeIc5fBlsH3nPA==}
@@ -2393,14 +2399,17 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
+  '@dashkite/masonry-export@0.1.0': {}
+
   '@dashkite/masonry-export@0.7.0': {}
 
   '@dashkite/masonry-markdown@0.7.0':
     dependencies:
       marked: 8.0.1
 
-  '@dashkite/masonry-stylus@0.7.0':
+  '@dashkite/masonry-stylus@0.8.0':
     dependencies:
+      '@dashkite/masonry-text': 0.7.0
       stylus: 0.60.0
     transitivePeerDependencies:
       - supports-color
@@ -2409,6 +2418,10 @@ snapshots:
     dependencies:
       '@dashkite/joy': 0.3.16
       fast-glob: 3.3.3
+
+  '@dashkite/masonry-text@0.7.0':
+    dependencies:
+      '@dashkite/masonry-export': 0.1.0
 
   '@dashkite/masonry-yaml@0.8.0':
     dependencies:

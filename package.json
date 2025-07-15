@@ -42,7 +42,7 @@
     "@dashkite/masonry-coffee": "0.10.0",
     "@dashkite/masonry-export": "0.7.0",
     "@dashkite/masonry-markdown": "0.7.0",
-    "@dashkite/masonry-stylus": "0.7.0",
+    "@dashkite/masonry-stylus": "0.8.0",
     "@dashkite/masonry-yaml": "0.8.0",
     "marked": "^9.0.0",
     "pug": "^3.0.2"
