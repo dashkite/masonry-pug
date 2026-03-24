@@ -10,8 +10,8 @@ import { yaml } from "@dashkite/masonry-yaml"
 
 js = ({ root, source, input, build }) ->
   f = Pug.compileClient input,
-    filename: source?.path
-    basedir: root
+    filename: Path.join ( root ? build.root ), source?.path
+    basedir:  ( root ? build.root )
     filters:
       coffee: ( input ) -> coffee { root, source, input, build }
       markdown: ( input ) -> markdown { root, source, input }
@@ -26,8 +26,8 @@ js = ({ root, source, input, build }) ->
 
 html = ({ root, source, input, data, build }) ->
   Pug.render input, {
-    filename: source?.path
-    basedir: root
+    filename: Path.join ( root ? build.root ), source?.path
+    basedir: ( root ? build.root )
     data: data
     filters:
       coffee: ( input ) -> coffee { root, source, input, build }
