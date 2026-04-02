@@ -41,10 +41,11 @@
     "@dashkite/joy": "^0.7.0",
     "@dashkite/masonry-coffee": "^0.10.0",
     "@dashkite/masonry-export": "^0.7.0",
-    "@dashkite/masonry-markdown": "^0.7.0",
-    "@dashkite/masonry-stylus": "^0.8.0",
+    "@dashkite/masonry-markdown": "link:../masonry-markdown",
+    "@dashkite/masonry-stylus": "link:../masonry-stylus",
     "@dashkite/masonry-yaml": "^0.8.0",
     "marked": "^9.1.6",
-    "pug": "^3.0.3"
+    "pug": "^3.0.3",
+    "xxhash-wasm": "^1.1.0"
   }
 }
