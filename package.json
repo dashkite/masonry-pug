@@ -41,7 +41,7 @@
     "@dashkite/joy": "^0.12.40",
     "@dashkite/masonry-coffee": "0.10.0",
     "@dashkite/masonry-export": "0.7.0",
-    "@dashkite/masonry-markdown": "link:../masonry-markdown",
+    "@dashkite/masonry-markdown": "^0.11.28",
     "@dashkite/masonry-stylus": "^0.11.28",
     "@dashkite/masonry-yaml": "0.8.0",
     "marked": "9.1.6",
